@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scribbler Documentation - a code documentation page template for codrops</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">Docs <span class="logo__thin"></span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/BOTCAHX" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Get Started</li>
+          <li class="js-btn">Configuration</li>
+          <li class="js-btn">Keybindings</li>
+          <li class="js-btn">Issues</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Get Started</h3>
+          <p>Belajar cara instalasi di panel</p>
+          <h3 class="section__title">File Bash run.js</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+              const { spawn } = require('child_process')
+const cp = require('child_process')
+const { promisify } = require('util')
+const exec = promisify(cp.exec).bind(cp)
+
+function start(cmd) {
+	return spawn(cmd, [], {
+		stdio: ['inherit', 'inherit', 'inherit', 'ipc']
+	})
+}
+
+start('clear')
+start('bash')
+console.log('Terminal ready to use!')
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Tombol Antarmuka</h3>
+          <p>Terdapat Tiga button / tombol dengan fungsi berbeda</p>
+          <table id="customers">
+            <tr>
+              <th>Options</th>
+              <th>Fungsi lain</th>
+              <th>Otomatis</th>
+            </tr>
+            <tr>
+              <td>Start</td>
+              <td>Berfungsi untuk memulai server panelmu</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Restart</td>
+              <td>Berfungsi untuk me-restart / memulai kembali server panel ketika di butuhkan.</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>Stop</td>
+              <td>Berfungsi sebagai tombol darurat ( kill, stop ) dimana tombol tersebut untuk menghentikan server yg sedang berjalan.</td>
+              <td>true</td>
+            </tr>
+          </table>
+          <p>Setiap button memiliki fungsi berbeda sesuai penamaan nya.</p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Keybindings</h3>
+          <p>Keybindings biasa digunakan untuk user yang menggunakan Komputer, laptop, MacBook dll.</p>
+          <p>Berfungsi sebagai shortcut dan mempermudah dalam multitasking.</p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Issues</h3>
+          <p>Jika mendapati masalah silahkan hubungi kami dengan bergabung kedalam grup, kami dengan senang hati akan menjawab setiap pertanyaan mu.</p>
+        </section>
+      </article>
+    </div>
+ <footer class="footer">© 2023 || BOTCAHX<a href="https://github.com/BOTCAHX" target="_blank" class="link link--light"> TioXd</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
