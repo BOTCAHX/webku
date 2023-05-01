@@ -17,7 +17,7 @@ if (document.getElementsByClassName('demo').length > 0) {
   ~ $ npm install
   ~ $ npm start
 
-       Scan Qr Code
+       Scan QR Code
  ▄▄▄▄▄▄▄  ▄ ▄▄ ▄▄▄▄▄▄▄ 
  █ ▄▄▄ █ ██ ▀▄ █ ▄▄▄ █ 
  █ ███ █ ▄▀ ▀▄ █ ███ █ 
